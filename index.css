@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "Spartan";
+  src: url("Spartan-ExtraBold.eot");
+  src: url("Spartan-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("Spartan-ExtraBold.woff2") format("woff2"),
+    url("Spartan-ExtraBold.woff") format("woff"),
+    url("Spartan-ExtraBold.ttf") format("truetype"),
+    url("Spartan-ExtraBold.svg#Spartan-ExtraBold") format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url("Spartan-Bold.eot");
+  src: url("Spartan-Bold.eot?#iefix") format("embedded-opentype"),
+    url("Spartan-Bold.woff2") format("woff2"),
+    url("Spartan-Bold.woff") format("woff"),
+    url("Spartan-Bold.ttf") format("truetype"),
+    url("Spartan-Bold.svg#Spartan-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url("Spartan-ExtraLight.eot");
+  src: url("Spartan-ExtraLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("Spartan-ExtraLight.woff2") format("woff2"),
+    url("Spartan-ExtraLight.woff") format("woff"),
+    url("Spartan-ExtraLight.ttf") format("truetype"),
+    url("Spartan-ExtraLight.svg#Spartan-ExtraLight")
+      format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", Trebuchet MS, Comic sans MS;
+  font-weight: 300;
+}
+@media screen and (max-width: 1020px) {
+  * {
+    box-sizing: initial;
+  }
+}
+body {
+  background-color: #fff;
+  margin: O;
+  padding: 0;
+  width: 100%;
+  font-family: "Spartan", Trebuchet MS, Comic sans MS;
+  font-weight: 300;
+}
+header {
+  display: flex;
+}
+.identity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1vw;
+  font-size: 1.2em;
+}
+.identity h2 {
+  font-family: "Spartan", Trebuchet MS, Comic sans MS;
+  font-weight: 800;
+}
+@media screen and (max-width: 560px) {
+  .identity h2 {
+    font-size: 1em;
+  }
+  .identity .logo {
+    width: 100px;
+    height: 100px;
+  }
+  .identity {
+    margin-top: 4vh;
+  }
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 25vw;
+  margin-right: 5vw;
+}
+.menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+.menu ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  list-style: none;
+}
+.menu a {
+  display: block;
+  padding: 18px 18px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s linear;
+}
+.menu a:hover {
+  color: rgb(202, 3, 3);
+}
+.menu-btn {
+  display: none;
+}
+
+.menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+@media (min-width: 48em) {
+  li {
+    float: left;
+  }
+  li a {
+    padding: 20px 30px;
+  }
+  .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 1348px) {
+  .menu a {
+    padding-left: 0px;
+  }
+}
+.toggle-button {
+  display: none;
+  position: absolute;
+  top: 0.65rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 30px;
+  margin-top: 8vh;
+}
+.toggle-button .bar {
+  height: 5px;
+  width: 100%;
+  background-color: rgb(202, 3, 3);
+  border-radius: 10px;
+}
+@media screen and (max-width: 1020px) {
+  .toggle-button {
+    display: flex;
+  }
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu a {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    order: 3;
+  }
+  .menu li {
+    text-align: center;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.catch_phrase_and_img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  margin-top: 8vh;
+}
+@media screen and (max-width: 1020px) {
+  .catch_phrase_and_img {
+    flex-direction: column;
+  }
+}
+.catch_phrase {
+  padding-left: 5vw;
+}
+@media screen and (max-width: 1020px) {
+  .catch_phrase {
+    order: 2;
+  }
+}
+.catch_phrase h1 {
+  font-size: 3.4em;
+  padding-bottom: 4vh;
+}
+.catch_phrase span {
+  color: rgb(202, 3, 3);
+  font-family: "Spartan", Trebuchet MS, Comic sans MS;
+  font-weight: 700;
+}
+.catch_phrase h3 {
+  font-size: 1.4em;
+}
+button {
+  background-color: black;
+  border-radius: 11px;
+  padding: 23px 45px;
+  margin-left: 50px;
+  margin-top: 90px;
+  transition: all 0.1s linear;
+}
+button:hover {
+  background-color: rgb(202, 3, 3);
+}
+button a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 20px 30px;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 1020px) {
+  .button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+  }
+}
+.main_img img {
+  width: 760px;
+  height: 620px;
+}
+@media screen and (max-width: 1020px) {
+  .main_img img {
+    float: right;
+    order: 1;
+    width: 80%;
+    height: 30%;
+  }
+}
