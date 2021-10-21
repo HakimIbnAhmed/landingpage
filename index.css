@@ -1,8 +1,7 @@
 @font-face {
   font-family: "Spartan";
   src: url("Spartan-ExtraBold.eot");
-  src: url("Spartan-ExtraBold.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("Spartan-ExtraBold.eot?#iefix") format("embedded-opentype"),
     url("Spartan-ExtraBold.woff2") format("woff2"),
     url("Spartan-ExtraBold.woff") format("woff"),
     url("Spartan-ExtraBold.ttf") format("truetype"),
@@ -28,13 +27,11 @@
 @font-face {
   font-family: "Spartan";
   src: url("Spartan-ExtraLight.eot");
-  src: url("Spartan-ExtraLight.eot?#iefix")
-      format("embedded-opentype"),
+  src: url("Spartan-ExtraLight.eot?#iefix") format("embedded-opentype"),
     url("Spartan-ExtraLight.woff2") format("woff2"),
     url("Spartan-ExtraLight.woff") format("woff"),
     url("Spartan-ExtraLight.ttf") format("truetype"),
-    url("Spartan-ExtraLight.svg#Spartan-ExtraLight")
-      format("svg");
+    url("Spartan-ExtraLight.svg#Spartan-ExtraLight") format("svg");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -181,14 +178,18 @@ header {
   background-color: rgb(202, 3, 3);
   border-radius: 10px;
 }
+.menu.responsive {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 @media screen and (max-width: 1020px) {
   .toggle-button {
     display: flex;
   }
-  .menu ul {
+  .menu {
     display: none;
-    flex-direction: column;
-    width: 100%;
   }
   .menu a {
     display: flex;
@@ -243,6 +244,9 @@ button {
   margin-left: 50px;
   margin-top: 90px;
   transition: all 0.1s linear;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 button:hover {
   background-color: rgb(202, 3, 3);
