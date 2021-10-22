@@ -1,11 +1,7 @@
 @font-face {
   font-family: "Spartan";
   src: url("Spartan-ExtraBold.eot");
-  src: url("Spartan-ExtraBold.eot?#iefix") format("embedded-opentype"),
-    url("Spartan-ExtraBold.woff2") format("woff2"),
-    url("Spartan-ExtraBold.woff") format("woff"),
-    url("Spartan-ExtraBold.ttf") format("truetype"),
-    url("Spartan-ExtraBold.svg#Spartan-ExtraBold") format("svg");
+  src: url("Spartan-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -14,11 +10,7 @@
 @font-face {
   font-family: "Spartan";
   src: url("Spartan-Bold.eot");
-  src: url("Spartan-Bold.eot?#iefix") format("embedded-opentype"),
-    url("Spartan-Bold.woff2") format("woff2"),
-    url("Spartan-Bold.woff") format("woff"),
-    url("Spartan-Bold.ttf") format("truetype"),
-    url("Spartan-Bold.svg#Spartan-Bold") format("svg");
+  src: url("Spartan-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -27,11 +19,7 @@
 @font-face {
   font-family: "Spartan";
   src: url("Spartan-ExtraLight.eot");
-  src: url("Spartan-ExtraLight.eot?#iefix") format("embedded-opentype"),
-    url("Spartan-ExtraLight.woff2") format("woff2"),
-    url("Spartan-ExtraLight.woff") format("woff"),
-    url("Spartan-ExtraLight.ttf") format("truetype"),
-    url("Spartan-ExtraLight.svg#Spartan-ExtraLight") format("svg");
+  src: url("Spartan-ExtraLight.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -116,30 +104,17 @@ header {
 .menu a:hover {
   color: rgb(202, 3, 3);
 }
-.menu-btn {
-  display: none;
-}
+.show-nav .bar {
+    width:0;
+    background:transparent;    
+  }
+  .show-nav .bar::before {
+    transform:rotate(45deg);
+  }
+  .show-nav .bar::after {
+    transform:rotate(-45deg);
+  }
 
-.menu-btn:checked ~ .menu {
-  max-height: 240px;
-}
-
-.menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-
-.menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
 @media (min-width: 48em) {
   li {
     float: left;
@@ -178,11 +153,7 @@ header {
   background-color: rgb(202, 3, 3);
   border-radius: 10px;
 }
-.menu.responsive {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
+
 
 @media screen and (max-width: 1020px) {
   .toggle-button {
@@ -199,6 +170,14 @@ header {
   }
   .menu li {
     text-align: center;
+  }
+  .menu__responsive {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
   }
   header {
     flex-direction: column;

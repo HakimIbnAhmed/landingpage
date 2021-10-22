@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Spartan';
+    src: url('Spartan-Light.eot');
+    src: url('Spartan-Light.eot?#iefix') format('embedded-opentype'),
+        url('Spartan-Light.woff2') format('woff2'),
+        url('Spartan-Light.woff') format('woff'),
+        url('Spartan-Light.svg#Spartan-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('Spartan-ExtraBold.eot');
+    src: url('Spartan-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Spartan-ExtraBold.woff2') format('woff2'),
+        url('Spartan-ExtraBold.woff') format('woff'),
+        url('Spartan-ExtraBold.svg#Spartan-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('Spartan-Bold.eot');
+    src: url('Spartan-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Spartan-Bold.woff2') format('woff2'),
+        url('Spartan-Bold.woff') format('woff'),
+        url('Spartan-Bold.svg#Spartan-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
